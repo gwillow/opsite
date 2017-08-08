@@ -6,20 +6,20 @@
 
 #### 登录界面
 
-![image](https://github.com/gwillow/opsite/tree/master/media/login.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/login.png)
 
 #### 信息概览
 
-![image](https://github.com/gwillow/opsite/tree/master/media/sumary.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/sumary.png)
 
 #### 配置管理
 
-![image](https://github.com/gwillow/opsite/tree/master/media/configure.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/configure.png)
 
-![image](https://github.com/gwillow/opsite/tree/master/media/compare.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/compare.png)
 
-![image](https://github.com/gwillow/opsite/tree/master/media/inspection.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/inspection.png)
 
 #### 远程管理
 
-![image](https://github.com/gwillow/opsite/tree/master/media/remotemanager.png)
+![image](https://github.com/gwillow/opsite/blob/master/media/remotemanager.png)
