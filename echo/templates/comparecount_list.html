@@ -1,0 +1,48 @@
+{% extends "res_list_display.html" %}
+{% block search %}
+
+                     <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="device_caption" >省名</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="node_name" name="comparecount_prov">
+                        </div>
+                     </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="device_ip">类型</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="node_address" name = "comparecount_type">
+                        </div>
+                     </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="node">表名</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="node_address" name = "comparecount_tab">
+                        </div>
+                     </div>
+
+{% endblock %}
+
+{% block table_tr %}
+
+<th>省名</th>
+<th>类型</th>
+<th>表名</th>
+<th>源端数量</th>
+<th>目标数量</th>
+<th>差异数量</th>
+<th>时间</th>
+
+
+{% endblock %}
+{% block table_td %}
+<td>{{item.comparecount_prov}}</td>
+<td>{{item.comparecount_type}}</td>
+<td>{{item.comparecount_tab}}</td>
+<td>{{item.comparecount_src}}</td>
+<td>{{item.comparecount_dst}}</td>
+<td>{{item.comparecount_diff}}</td>
+<td>{{item.comparecount_date}}</td>
+{% endblock %}

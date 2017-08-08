@@ -1,0 +1,54 @@
+{% extends "res_list_display.html" %}
+{% block search %}
+
+                     <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="ogginfo_prov" >省名</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="ogginfo_prov" name="ogginfo_prov">
+                        </div>
+                     </div>
+
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="ogginfo_host">IP地址</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="ogginfo_host" name = "ogginfo_host">
+                        </div>
+                     </div>
+
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="ogginfo_suspend">是否挂起</span>
+                            <input type="text" class="form-control" placeholder="" aria-describedby="ogginfo_suspend" name = "ogginfo_suspend">
+                        </div>
+                     </div>
+
+{% endblock %}
+
+{% block table_tr %}
+
+<th>省名</th>
+<th>类型</th>
+<th>IP地址</th>
+<th>进程状态</th>
+<th>进程明细</th>
+<th>磁盘空间</th>
+<th>库表空间</th>
+<th style="width:45px">延时</th>
+<th style="width:45px">挂起</th>
+<th>时间</th>
+
+
+{% endblock %}
+{% block table_td %}
+<td>{{item.ogginfo_prov}}</td>
+<td>{{item.ogginfo_type}}</td>
+<td>{{item.ogginfo_host}}</td>
+<td>{{item.ogginfo_status}}</td>
+<td>{{item.ogginfo_detail}}</td>
+<td>{{item.ogginfo_diskspace}}</td>
+<td>{{item.ogginfo_tablespace}}</td>
+<td>{{item.ogginfo_delay}}</td>
+<td>{{item.ogginfo_suspend}}</td>
+<td>{{item.ogginfo_createtime}}</td>
+{% endblock %}
